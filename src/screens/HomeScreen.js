@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, StyleSheet, View, Button, TouchableOpacity } from "react-native";
+import { Text, StyleSheet, View, Button } from "react-native";
 
 const HomeScreen = ({navigation}) => {
   return <View style={styles.body}>
@@ -7,22 +7,27 @@ const HomeScreen = ({navigation}) => {
     <View style={{ paddingTop:8 }}>
       <Button 
         onPress={() => navigation.navigate("Component")}
-        title="Go to component demo"/>
+        title="Component demo"/>
     </View>
     <View style={{ paddingTop:8 }}>
       <Button 
         onPress={() => navigation.navigate("List")}
-        title="Go to list demo"/>
+        title="List demo"/>
     </View>
     <View style={{ paddingTop:8 }}>
       <Button 
           onPress={() => navigation.navigate("Image")}
-          title="Go to image demo"/>
+          title="Image demo"/>
     </View>
     <View style={{ paddingTop:8 }}>
       <Button 
           onPress={() => navigation.navigate("Counter")}
-          title="Go to counter demo"/>
+          title="Counter demo"/>
+    </View>
+    <View style={{ paddingTop:8 }}>
+      <Button 
+          onPress={() => navigation.navigate("Password")}
+          title="Password demo"/>
     </View>
   </View>;
 };

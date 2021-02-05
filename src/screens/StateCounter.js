@@ -18,15 +18,16 @@ const StateCounter = props => {
         }
     };
 
-    return <View>
-        <View style={{flex: 1, flexDirection: 'row'}}>
+    return <>
+        <View style={{flex: 1, flexDirection: 'row', marginBottom: 20}}>
+            <View><Text style={style.textStyle}>Red : </Text></View>
             <View style={style.button}>
                 <Button 
                     title="-"
                     onPress={() => setCounter("red" , -1)}
                 />
             </View>
-            <Text style={style.textStyle}>{red}</Text>
+            <View><Text style={style.textStyle}>{red}</Text></View>
             <View style={style.button}>
                 <Button 
                     title="+"
@@ -34,14 +35,15 @@ const StateCounter = props => {
                 />
             </View>
         </View>
-        <View style={{flex: 1, flexDirection: 'row'}}>
+        <View style={{flex: 1, flexDirection: 'row', marginVertical: 20}}>
+            <View><Text style={style.textStyle}>Green : </Text></View>
             <View style={style.button}>
                 <Button 
                     title="-"
                     onPress={() => setCounter("green" , -1)}
                 />
             </View>
-            <Text style={style.textStyle}>{green}</Text>
+            <View><Text style={style.textStyle}>{green}</Text></View>
             <View style={style.button}>
                 <Button 
                     title="+"
@@ -49,14 +51,15 @@ const StateCounter = props => {
                 />
             </View>
         </View>
-        <View style={{flex: 1, flexDirection: 'row'}}>
+        <View style={{flex: 1, flexDirection: 'row', marginVertical: 20}}>
+            <View><Text style={style.textStyle}>Blue : </Text></View>
             <View style={style.button}>
                 <Button 
                     title="-"
                     onPress={() => setCounter("blue" , -1)}
                 />
             </View>
-            <Text style={style.textStyle}>{blue}</Text>
+            <View><Text style={style.textStyle}>{blue}</Text></View>
             <View style={style.button}>
                 <Button 
                     title="+"
@@ -64,7 +67,7 @@ const StateCounter = props => {
                 />
             </View>
         </View>
-    </View>
+    </>
 };
 
 const style = StyleSheet.create({

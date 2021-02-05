@@ -1,10 +1,10 @@
 import React from "react";
 import {Text, View, StyleSheet, Button} from "react-native";
-import StateCounter from "./src/screens/StateCounter";
-import ReducerCounter from "./src/screens/ReducerCounter";
+import StateCounter from "./StateCounter";
+import ReducerCounter from "./ReducerCounter";
 
 const CounterScreen = props => {
-    return <View >
+    return <View>
         <View style={style.body}>
             <Text>Use State</Text>
             <StateCounter />
@@ -18,7 +18,8 @@ const CounterScreen = props => {
 
 const style = StyleSheet.create({
     body: {
-        padding: 8
+        padding: 8,
+        margin: 10
     }
 });
 
